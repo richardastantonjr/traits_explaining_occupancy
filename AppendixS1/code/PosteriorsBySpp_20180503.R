@@ -28,7 +28,7 @@ TraitData[, 1] <- as.factor(TraitData[,1])
 
 ## load models with quadratic time of day effects and effects parameterization 
 ## Prior version used means parameterization and linear time of day effects.
-load(("./Occupancy_analysis_Swazi_birds_Bayesian_quadTime_fixed.RData"))
+load("./Occupancy_analysis_Swazi_birds_Bayesian_quadTime_fixed.RData")
 
 # subset and process data  -----------------------------------------------------------------------
 TraitData <- filter(TraitData,TraitData$Species %in% dimnames(AbunHists.subset)[[3]]) 
